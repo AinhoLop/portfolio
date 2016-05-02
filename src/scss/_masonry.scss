@@ -1,0 +1,27 @@
+.grid-sizer {
+  width: 33.333%;
+}
+
+.grid-item {
+  width: 33.333%;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 1em;
+  cursor: pointer;
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0.5em;
+    right: 0.5em;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+
+@font-face {
+font-family: stay;
+src: url(../type/stay.ttf);
+}
+
+html, body, div, h1, h2, h3,  h5, h6, p, blockquote, ol, ul, li {
+	font-family: 'Hind', sans-serif;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body { 
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
