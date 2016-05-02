@@ -1,0 +1,26 @@
+@mixin tamaño{
+  text-align: justify;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+ }
+@mixin nav-version($size:rotate(225deg)){
+-webkit-transform: ($size);
+      -moz-transform: ($size);
+      transform: ($size);
+}
+
+@mixin nav-version2($size:rotate(-225deg)){
+-webkit-transform: ($size);
+      -moz-transform: ($size);
+      transform: ($size);
+}
+
+@mixin front($num:600ms ease){
+-webkit-transition: opacity  ($num);
+  -moz-transition: opacity ($num);
+  -o-transition: opacity ($num);
+  -ms-transition: opacity ($num);
+  transition: opacity ($num);
+   }

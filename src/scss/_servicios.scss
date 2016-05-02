@@ -1,0 +1,76 @@
+.content {
+  width: 100%;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+.content.sidebar {
+  width: 659px;
+  float: left;
+  margin-top: 40px;
+  border-right: 1px solid $primary-blue;
+}
+#services{
+  margin-left: 25%;
+  padding-left: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: $primary-blue;
+  width: 50%;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+.servicesitem {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.servicesitem img {
+  margin-top: 60px;
+  margin-left: 60px;
+}
+.servicesitem p {
+  display: none;
+}
+.servicesitem .front, .servicesitem .back {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  float: left;
+  position: absolute;
+}
+.front {
+  z-index: 2;
+  opacity: 2.0;
+  @include front;
+  background-color: $light-color;
+}
+.servicesitem:hover .front {
+  opacity: 0;
+}
+.back {
+  background-color: $primary-blue;
+}
+.back h3 {
+  letter-spacing: 0.3rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $light-color;
+  text-align: center;
+  padding-top: 75px;
+}
+
+div.icon {
+  font-size: 80px;
+}
+.front div.icon {
+  line-height: 210px;
+  text-align: center;
+}
+.main p{
+color: white;
+padding-left: 50px;
+}
